@@ -18,6 +18,7 @@ public class Gupta_madlibs2 {
                     System.out.println("Noun at Index: " + n);
                     Scanner sc = new Scanner(System.in);
                     System.out.print("Enter a Noun: ");
+                    System.out.println("");
                     String input = sc.nextLine();
                     newStory = newStory.substring(0, n) + input + newStory.substring(n + 4);
                 }
@@ -39,6 +40,7 @@ public class Gupta_madlibs2 {
                     System.out.println("Verb at Index: " + n);
                     Scanner sc = new Scanner(System.in);
                     System.out.print("Enter a Verb: ");
+                    System.out.println("");
                     String input = sc.nextLine();
                     newStory = newStory.substring(0, n) + input + newStory.substring(n + 4);
                 }
@@ -62,6 +64,7 @@ public class Gupta_madlibs2 {
                     System.out.println("Adjective at Index: " + n);
                     Scanner sc = new Scanner(System.in);
                     System.out.print("Enter a Adjective: ");
+                    System.out.println("");
                     String input = sc.nextLine();
                     newStory = newStory.substring(0, n) + input + newStory.substring(n + 9);
                 }
@@ -84,7 +87,8 @@ public class Gupta_madlibs2 {
                 if (n != -1){
                     System.out.println("Adverb at Index: " + n);
                     Scanner sc = new Scanner(System.in);
-                    System.out.print("Enter a Noun: ");
+                    System.out.print("Enter an Adverb: ");
+                    System.out.println("");
                     String input = sc.nextLine();
                     newStory = newStory.substring(0, n) + input + newStory.substring(n + 6);
                 }
@@ -102,9 +106,9 @@ public class Gupta_madlibs2 {
         //Calls to methods to get inputs and print story
         //Each function only replaces one of the parts of speech, so we need to run all four with the same string
         String newStory = scanNounStory(story);
-        String newerStory = scanAdjStory(newStory);
-        String newsestStory = scanAdvStory(newerStory);
-        String newesterStory = scanVerbStory(newsestStory);
+        String newerStory = scanVerbStory(newStory);
+        String newsestStory = scanAdjStory(newerStory);
+        String newesterStory = scanAdvStory(newsestStory);
         System.out.println(newesterStory);
         
     }
