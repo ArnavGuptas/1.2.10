@@ -5,6 +5,7 @@
 This first video is running Gupta_madlibs1, which was my first attempt at the challenge.
 https://github.com/user-attachments/assets/2e1c7b1f-1d94-4dc0-b11e-77024a000eb4
 Output of the new Second program:\
+```
 Noun at Index: 42
 Enter a Noun: 
  Watermelon
@@ -39,3 +40,4 @@ Adjective at Index: 207
 Enter a Adjective: 
  Blue
 One morning, a Green day began, and a Watermelon decided to Run Sprint through the park. Oh my it cried, I see a Ugly Canteloupe! The Mango began to Jump Walk, and the Furry creature chased it! It was a Blue sight to see.
+```
