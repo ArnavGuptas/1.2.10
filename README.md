@@ -4,6 +4,7 @@
 10.03.25: New Requirements Revealed\
 This first video is running Gupta_madlibs1, which was my first attempt at the challenge.
 https://github.com/user-attachments/assets/2e1c7b1f-1d94-4dc0-b11e-77024a000eb4
+
 Output of the new Second program:\
 ```
 Noun at Index: 42
