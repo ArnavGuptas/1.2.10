@@ -12,7 +12,7 @@ public class Gupta_madlibs2 {
             if (n != -1){
             //Theres a slight oversight here, it wont look for the word noun in the first four letters because i added the +4
             //The +4 is neccesary though because otherwise it starts looking for the next word noun at the beginning of the word noun so it finds the same noun over and over
-                n = story.indexOf("noun", n + 4);
+                n = newStory.indexOf("noun", n + 4);
                 if (n != -1){
                     //This is the code that asks the user for their input, then uses substring to make a new string, which is done over and over until no more instances of "noun" are left in the story
                     System.out.println("Noun at Index: " + n);
@@ -35,7 +35,7 @@ public class Gupta_madlibs2 {
         String newStory = story;
         while (true){
             if (n != -1){
-                n = story.indexOf("verb", n + 4);
+                n = newStory.indexOf("verb", n + 4);
                 if (n != -1){
                     System.out.println("Verb at Index: " + n);
                     Scanner sc = new Scanner(System.in);
@@ -59,7 +59,7 @@ public class Gupta_madlibs2 {
             if (n != -1){
 
      
-                n = story.indexOf("adjective", n + 4);
+                n = newStory.indexOf("adjective", n + 9);
                 if (n != -1){
                     System.out.println("Adjective at Index: " + n);
                     Scanner sc = new Scanner(System.in);
@@ -83,7 +83,7 @@ public class Gupta_madlibs2 {
             if (n != -1){
 
      
-                n = story.indexOf("adverb", n + 4);
+                n = newStory.indexOf("adverb", n + 6);
                 if (n != -1){
                     System.out.println("Adverb at Index: " + n);
                     Scanner sc = new Scanner(System.in);
@@ -102,7 +102,7 @@ public class Gupta_madlibs2 {
 //All four of the scan functions were one much nicer function, but I had to seperate them because I didn't know how to return mulitple things in one method
     //This is the main function that runs things
     public static void main(String[]args){
-        String story = "A adjective day began, and a noun decided to verb adverb through the park. Oh my it cried, I see a adjective noun! The noun began to verb adverb, and the adjective creature chased it! It was a truly adjective sight.";
+        String story = "One morning, a adjective day began, and a noun decided to verb adverb through the park. Oh my it cried, I see a adjective noun! The noun began to verb adverb, and the adjective creature chased it! It was a adjective sight to see.";
         //Calls to methods to get inputs and print story
         //Each function only replaces one of the parts of speech, so we need to run all four with the same string
         String newStory = scanNounStory(story);
